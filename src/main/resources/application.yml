@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: backend
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    password: 'easy0716'
+    username: root
+    url: jdbc:mysql://localhost:3306/duboo?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul
+    jpa:
+      hibernate:
+        ddl-auto: update
+      properties:
+        hibernate:
+          format_sql: 'true'
+          show_sql: 'false'
+          dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+server:
+  port: 8088
